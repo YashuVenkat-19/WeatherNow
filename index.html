@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
+    <link href="index.css" rel="stylesheet" />
+    <title>WeatherThere</title>
+</head>
+
+<body>
+    <div class="main-body">
+        <div class="main">
+            <div class="hd">
+                <p>🌍WeatherNow..</p>
+            </div>
+            <div class="main-in">
+                <div class="head">
+                    <div class="loc">
+                        <label for="city" class="pr">
+                            What is the weather in
+                        </label>
+                        <form>
+                            <input id="city" type="text" class="input" />
+                        </form>
+                        <div class="buttons">
+                            <button onclick=getWeather()>Check</button>
+                            <button onclick=reload()>Reset</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="outer" class="output">
+                    <p id="out"></p>
+                    <p id="desc1"></p>
+                    <p id="desc2"></p>
+                    <p id="desc3"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
